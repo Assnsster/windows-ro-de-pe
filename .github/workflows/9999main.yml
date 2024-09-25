@@ -18,6 +18,7 @@ jobs:
         run: |
           mkdir sdb1
           sudo mount /dev/sdb1 ./sdb1
+          cd sdb1
           sudo chmod 666 /dev/kvm
           echo "dang tai windows"
           sudo wget -O file.qcow2 "https://go.microsoft.com/fwlink/?linkid=2268774&clcid=0x409&culture=en-us&country=us" &>/dev/null &
