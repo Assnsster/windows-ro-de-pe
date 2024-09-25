@@ -23,7 +23,7 @@ jobs:
           echo "dang tai windows"
           sudo wget -O file.iso "https://go.microsoft.com/fwlink/p/?LinkID=2268694&clcid=0x409&culture=en-us&country=us" &>/dev/null &
           while ps axg | grep -vw grep | grep -w wget > /dev/null; do sleep 1; done
-          qemu-img create win.img 50G
+          sudo qemu-img create win.img 50G
           echo "thanh cong"
           tailscale ip -4
           echo "Đăng Nhập với port 3389"
