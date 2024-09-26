@@ -1,4 +1,4 @@
-name: Tailscale (for advance user)
+name: Tailscale
 
 on: 
   workflow_dispatch:
